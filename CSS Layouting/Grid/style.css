@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    width: 600px;
+    border: 2px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "header header"
+        "aside main"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1.3fr;
+}
+
+header {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+}
+
+footer {
+    background-color: grey;
+    padding: 20px 0;
+    grid-area: footer;
+}
+
+aside {
+    background-color: lightblue;
+    padding: 60px 0;
+    grid-area: aside   ;
+}
+
+nav {
+    background-color: greenyellow;
+    padding: 80px 0;
+    grid-area: nav;
+}
+
+main {
+    background-color: maroon;
+    padding: 141.5px 0;
+    flex: 1.5;
+    grid-area: main;
+}

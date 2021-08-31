@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+:root {
+  /* color */
+  --primary-color-cyan--: hsl(179, 62%, 43%);
+  --primary-color-yellow--: hsl(71, 73%, 54%);
+  --neutral-color-gray--: hsl(204, 43%, 93%);
+  --neutral-color-blue--: hsl(218, 22%, 67%);
+
+  /* Font */
+  --title-font-size--: 1.6rem;
+  --subtitle-font-size--: 1rem;
+  --body-font-size--: 0.877rem;
+  --font--: "Karla", sans-serif;
+  --w-medium--: 400;
+  --w-bold--: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: var(--font--);
+  background-color: var(--neutral-color-gray--);
+  padding: 25px;
+}
+.join {
+  background-color: #fff;
+  padding: 25px;
+}
+.title {
+  font-size: var(--title-font-size--);
+  font-weight: var(--w-bold--);
+  margin-bottom: 1rem;
+}
+.join .title {
+  color: var(--primary-color-cyan--);
+}
+.join .subtitle {
+  color: var(--primary-color-yellow--);
+  font-size: var(--subtitle-font-size--);
+  font-weight: var(--w-medium--);
+  margin-bottom: 1rem;
+}
+.join .description {
+  color: var(--neutral-color-blue--);
+  font-size: var(--body-font-size--);
+  line-height: 1.5rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-cyan--);
+  padding: 25px;
+}
+.price .title {
+  color: #fff;
+}
+.price p {
+  font-size: var(--body-font-size--);
+}
+.price .subtitle {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--neutral-color-gray--);
+}
+.price .subtitle .subtitle-price {
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.price .description {
+  color: white;
+  margin-bottom: 2rem;
+}
+.price .button {
+  align-self: center;
+  color: white;
+  font-weight: 900;
+  background-color: var(--primary-color-yellow--);
+  border: none;
+  padding: 0.83rem 35%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.425);
+}
+
+.why {
+  background-color: hsl(179, 48%, 56%);
+  padding: 25px;
+}
+.why .title {
+  color: white;
+}
+.why ul li {
+  list-style-type: none;
+  color: var(--neutral-color-gray--);
+  font-weight: var(--w-medium--);
+  font-size: var(--body-font-size--);
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-color: var(--neutral-color-gray--);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 680px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .join {
+    grid-column: 1 / 3;
+  }
+  footer {
+    padding: 2rem 0;
+    grid-column: 1/3;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 20% 0;
+  }
+  .container {
+    width: 680px;
+  }
+}

@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.kotak  {
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+    font-size: 12px;
+    line-height: 25px;
+    color: white;
+}
+
+.merah {
+    background-color: red;
+}
+
+.hijau {
+    background-color: green;
+}
+
+.biru {
+    background-color: blue;
+}
